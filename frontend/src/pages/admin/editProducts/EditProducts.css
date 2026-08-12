@@ -1,0 +1,186 @@
+/* ===========================
+   MOBILE FIRST
+=========================== */
+
+.editProduct,
+.addProduct {
+    width: 100%;
+    padding: 20px 16px;
+}
+
+.editProduct form,
+.addProduct form {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.editProduct form > div,
+.addProduct form > div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.editProduct label,
+.addProduct label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.editProduct input,
+.editProduct textarea,
+.editProduct select,
+.addProduct input,
+.addProduct textarea,
+.addProduct select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d6d6d6;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    outline: none;
+}
+
+.editProduct input:focus,
+.editProduct textarea:focus,
+.editProduct select:focus,
+.addProduct input:focus,
+.addProduct textarea:focus,
+.addProduct select:focus {
+    border-color: #d86b8c;
+}
+
+.editProduct textarea,
+.addProduct textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+h2{
+    text-align: center;
+}
+.productImage {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.productImage img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+.productPricing,
+.productCategory,
+.productDetails {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.productDetails label:last-of-type,
+.productDetails label:nth-last-of-type(2) {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.productDetails input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+}
+
+.saveBtn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    background: #d86b8c;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.saveBtn:hover {
+    background: #c35376;
+}
+
+/* ===========================
+      TABLET
+=========================== */
+
+@media (min-width: 768px) {
+
+    .editProduct,
+    .addProduct {
+        padding: 30px;
+    }
+
+    .productPricing,
+    .productCategory {
+        display: grid;
+        grid-template-columns: 180px 1fr;
+        align-items: center;
+        column-gap: 20px;
+        row-gap: 14px;
+    }
+
+    .productDetails {
+        display: grid;
+        grid-template-columns: 180px 1fr;
+        align-items: center;
+        column-gap: 20px;
+        row-gap: 14px;
+    }
+
+    .productDetails label:nth-last-of-type(2),
+    .productDetails label:last-of-type {
+        grid-column: 2;
+        width: fit-content;
+    }
+
+}
+
+/* ===========================
+      DESKTOP
+=========================== */
+
+@media (min-width: 1024px) {
+
+    .editProduct form,
+    .addProduct form {
+        padding: 35px 40px;
+    }
+
+    .productImage {
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .productImage img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .saveBtn {
+        width: 220px;
+        align-self: flex-end;
+    }
+}

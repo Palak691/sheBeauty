@@ -1,0 +1,21 @@
+###
+POST http://localhost:8000/user/register
+Content-Type: application/json
+
+{
+    "name" : "Palak",
+    "email" :"palak232@gmail.com",
+    "password" : "1234",
+    "gender" : "female"
+
+}
+
+###
+POST http://localhost:8000/user/login
+Content-Type: application/json
+
+{
+    "email" :"palak232@gmail.com",
+    "password" : "1234"
+
+}

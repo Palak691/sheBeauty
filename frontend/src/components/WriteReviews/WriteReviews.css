@@ -1,0 +1,179 @@
+
+
+.writeReviewContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 16px;
+}
+
+.writeReview {
+    width: 100%;
+    background: #fff;
+    border: 1px solid #ececec;
+    border-radius: 14px;
+    padding: 20px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, .06);
+}
+
+.writeReview>p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #d86b8c;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.rating {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.rating svg {
+    font-size: 1.8rem;
+    color: #d4d4d4;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.rating svg:hover {
+    transform: scale(1.1);
+}
+
+.activeStar {
+    color: #ffc107 !important;
+}
+
+.comment textarea {
+    width: 100%;
+    resize: vertical;
+    min-height: 130px;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: .95rem;
+    outline: none;
+    transition: .25s;
+    font-family: inherit;
+}
+
+.comment textarea:focus {
+    border-color: #d86b8c;
+    box-shadow: 0 0 0 3px rgba(216, 107, 140, .15);
+}
+
+.skinType {
+    margin-top: 18px;
+}
+
+.skinType select {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: .95rem;
+    outline: none;
+    background: #fff;
+    cursor: pointer;
+    transition: .25s;
+}
+
+.skinType select:focus {
+    border-color: #d86b8c;
+    box-shadow: 0 0 0 3px rgba(216, 107, 140, .15);
+}
+
+.submitReview {
+    width: 100%;
+    margin-top: 24px;
+    padding: 13px;
+    border: none;
+    border-radius: 10px;
+    background: #d86b8c;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .25s;
+}
+
+.submitReview:hover {
+    background: #c6577b;
+    transform: translateY(-2px);
+}
+
+.submitReview:active {
+    transform: translateY(0);
+}
+
+
+
+@media (min-width: 768px) {
+
+    .writeReviewContainer {
+        padding: 24px;
+    }
+
+    .writeReview {
+        max-width: 650px;
+        padding: 30px;
+    }
+
+    .writeReview>p {
+        font-size: 1.35rem;
+    }
+
+    .rating svg {
+        font-size: 2rem;
+    }
+
+    .comment textarea {
+        min-height: 150px;
+    }
+
+    .submitReview {
+        width: 180px;
+        display: block;
+        margin: 24px auto 0;
+    }
+}
+
+
+
+@media (min-width: 1024px) {
+
+    .writeReview {
+        max-width: 750px;
+        padding: 36px;
+    }
+
+    .writeReview>p {
+        font-size: 1.5rem;
+        margin-bottom: 24px;
+    }
+
+    .rating {
+        gap: 12px;
+    }
+
+    .rating svg {
+        font-size: 2.2rem;
+    }
+
+    .comment textarea {
+        min-height: 170px;
+        font-size: 1rem;
+    }
+
+    .skinType select {
+        font-size: 1rem;
+    }
+
+    .submitReview {
+        width: 200px;
+        font-size: 1rem;
+    }
+}

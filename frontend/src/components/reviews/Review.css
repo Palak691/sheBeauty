@@ -1,0 +1,208 @@
+.reviewContainer {
+    width: 100%;
+    padding: 40px 16px;
+    background: #fffaf9;
+}
+
+/* Heading */
+
+.stories p {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #2d2d2d;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.stories span {
+    display: block;
+    color: #7d7d7d;
+    line-height: 1.7;
+    font-size: 0.95rem;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+/* Layout */
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+/* Image */
+
+.reviewImg {
+    position: static;
+}
+
+.reviewImg img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 24px;
+}
+
+/* Right */
+
+.reviewRight {
+    display: flex;
+    flex-direction: column;
+}
+
+.reviewRight h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: var(--color-accent);
+    line-height: 1.2;
+    margin: 0;
+    text-align: center;
+}
+
+/* Cards */
+
+.reviewCard {
+    width: 100%;
+    max-width: 320px;
+    background: white;
+    padding: 18px;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .08);
+    margin: 18px auto 35px;
+    transition: .3s;
+}
+
+.reviewCard:hover {
+    transform: translateY(-6px);
+}
+
+.reviewCard p {
+    margin-top: 10px;
+    color: #666666;
+    line-height: 1.6;
+}
+
+/* Remove zig-zag on mobile */
+
+.reviewCard:nth-of-type(1),
+.reviewCard:nth-of-type(2),
+.reviewCard:nth-of-type(3) {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ========================= */
+/* Tablet */
+/* ========================= */
+
+@media (min-width:768px) {
+
+    .reviewContainer {
+        padding: 50px 5%;
+    }
+
+    .stories p {
+        font-size: 2.5rem;
+        text-align: left;
+    }
+
+    .stories span {
+        max-width: 700px;
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    .reviewImg img {
+        height: 550px;
+    }
+
+    .reviewRight h2 {
+        font-size: 2.5rem;
+        text-align: left;
+    }
+
+    .reviewCard {
+        width: 280px;
+        margin-bottom: 40px;
+    }
+
+    .reviewCard:nth-of-type(1) {
+        margin-left: 120px;
+        margin-right: 0;
+    }
+
+    .reviewCard:nth-of-type(2) {
+        margin-left: 20px;
+        margin-right: 0;
+    }
+
+    .reviewCard:nth-of-type(3) {
+        margin-left: 120px;
+        margin-right: 0;
+    }
+}
+
+/* ========================= */
+/* Desktop */
+/* ========================= */
+
+@media (min-width:1024px) {
+
+    .reviewContainer {
+        padding: 10px 8%;
+    }
+
+    .stories p {
+        font-size: 3rem;
+        margin-bottom: 0;
+    }
+
+    .stories span {
+        max-width: 700px;
+        line-height: 1.8;
+        margin-bottom: 24px;
+    }
+
+    .reviews {
+        display: grid;
+        grid-template-columns: 45% 55%;
+        gap: 70px;
+        align-items: flex-start;
+    }
+
+    .reviewImg {
+        position: sticky;
+        top: 120px;
+    }
+
+    .reviewImg img {
+        height: 700px;
+        border-radius: 30px;
+    }
+
+    .reviewRight h2 {
+        font-size: 3rem;
+    }
+
+    .reviewCard {
+        width: 260px;
+        margin: 20px 0 45px;
+    }
+
+    /* Restore your original zig-zag */
+
+    .reviewCard:nth-of-type(1) {
+        margin-left: 170px;
+    }
+
+    .reviewCard:nth-of-type(2) {
+        margin-left: 20px;
+    }
+
+    .reviewCard:nth-of-type(3) {
+        margin-left: 170px;
+    }
+}

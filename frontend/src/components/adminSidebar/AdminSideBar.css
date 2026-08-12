@@ -1,0 +1,77 @@
+/* mobile */
+
+.adminNavbar{
+    width:100%;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:12px;
+    overflow-x:auto;
+    background:#fff;
+    border-bottom:1px solid #e5e5e5;
+    scrollbar-width:none;
+}
+
+.adminNavbar::-webkit-scrollbar{
+    display:none;
+}
+
+.adminNavbar a{
+    text-decoration:none;
+    color:#555;
+    font-size:0.95rem;
+    font-weight:500;
+    white-space:nowrap;
+    padding:10px 16px;
+    border-radius:8px;
+    transition:.2s;
+}
+
+.adminNavbar a:hover{
+    background:#f5f5f5;
+}
+
+.adminNavbar a.active{
+    background:#000;
+    color:#fff;
+}
+
+
+/* tab */
+
+@media (min-width:768px){
+
+    .adminNavbar{
+        width:220px;
+        min-height:100vh;
+        flex-direction:column;
+        align-items:stretch;
+        padding:24px 16px;
+        border-right:1px solid #e5e5e5;
+        border-bottom:none;
+        overflow:visible;
+        flex-shrink:0;
+    }
+
+    .adminNavbar a{
+        width:100%;
+    }
+
+}
+
+
+/* desktop */
+
+@media (min-width:1024px){
+
+    .adminNavbar{
+        width:250px;
+        padding:30px 20px;
+    }
+
+    .adminNavbar a{
+        font-size:1rem;
+        padding:12px 18px;
+    }
+
+}

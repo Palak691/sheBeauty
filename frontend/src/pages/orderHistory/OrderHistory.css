@@ -1,0 +1,276 @@
+
+.order_Section{
+    width:100%;
+    padding:14px;
+}
+
+.rightSide{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.right{
+    width:100%;
+}
+
+.right h2{
+    font-size:24px;
+    color:#222;
+    margin-bottom:4px;
+}
+
+.right span{
+    color:#777;
+    font-size:14px;
+}
+
+/* ---------- TOP ---------- */
+
+.topSection{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    margin:24px 0;
+}
+
+.search input{
+    width:100%;
+    padding:13px 16px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    outline:none;
+    font-size:15px;
+}
+
+.search input:focus{
+    border-color:#d2698e;
+}
+
+.features{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:8px;
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    background:#fff;
+    cursor:pointer;
+}
+
+.features svg{
+    width:20px;
+}
+
+/* ---------- ORDERS ---------- */
+
+.allOrder{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.orderCard{
+    background:#fff;
+    border-radius:16px;
+    padding:18px;
+    box-shadow:0 4px 14px rgba(0,0,0,.08);
+}
+
+.status{
+    display:inline-block;
+    padding:6px 14px;
+    border-radius:20px;
+    background:#f8edf2;
+    color:#d2698e;
+    font-size:13px;
+    font-weight:600;
+    margin-bottom:16px;
+}
+
+.orderContent{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.orderImage{
+    display:flex;
+    justify-content:center;
+}
+
+.orderImage img{
+    width:110px;
+    height:110px;
+    object-fit:contain;
+    background:#fafafa;
+    border-radius:12px;
+}
+
+.orderInfo h3{
+    font-size:18px;
+    margin-bottom:10px;
+    color:#222;
+}
+
+.orderInfo p{
+    margin-bottom:8px;
+    color:#666;
+    font-size:14px;
+}
+
+.price{
+    color:#d2698e !important;
+    font-size:18px !important;
+    font-weight:700;
+}
+
+.orderDate,
+.orderId{
+    font-size:13px !important;
+    color:#888 !important;
+}
+
+.orderInfo button{
+    margin-top:12px;
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    background:#d2698e;
+    color:#fff;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+}
+
+.orderInfo button:hover{
+    background:#bf557b;
+}
+.accountMenu{
+    display: none;
+}
+.menuBar{
+        display: block;
+        height: 1rem;
+        width: 1rem;
+    }
+/* Hide image on mobile */
+
+.womenImg{
+    display:none;
+}
+
+
+/* ================= TABLET ================= */
+
+@media (min-width:768px){
+
+    .order_Section{
+        padding:24px;
+    }
+
+    .topSection{
+        flex-direction:row;
+        align-items:center;
+    }
+
+    .search{
+        flex:1;
+    }
+
+    .features{
+        width:170px;
+    }
+
+    .orderContent{
+        flex-direction:row;
+        align-items:center;
+    }
+
+    .orderImage img{
+        width:120px;
+        height:120px;
+    }
+
+    .orderInfo button{
+        width:auto;
+        padding:10px 22px;
+    }
+}
+
+/* ================= DESKTOP ================= */
+
+@media (min-width:1024px){
+
+    .order_Section{
+        max-width:1400px;
+        margin:40px ;
+        padding:0 30px;
+        display:flex;
+        gap:13px;
+    }
+
+    .rightSide{
+        flex-direction:row;
+        align-items:flex-start;
+
+
+    }
+
+    .right{
+        flex:1;
+    }
+
+    .right h2{
+        font-size:30px;
+    }
+
+    .allOrder{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    width: 800px;
+    }
+
+  .orderCard{
+    background:#fff;
+    border-radius:16px;
+    padding:16px;
+    min-height: 300px;
+    box-shadow:0 4px 14px rgba(0,0,0,.08);
+   }
+  
+    .womenImg{
+        display:block;
+        width:220px;
+        position:sticky;
+        top:90px;
+        flex-shrink:0;
+    }
+
+    .womenImg img{
+        width:96%;
+        border-radius:50%;
+        box-shadow:0 10px 25px rgba(0,0,0,.12);
+    }
+
+    .orderCard:hover{
+        transform:translateY(-3px);
+        transition:.3s;
+        box-shadow:0 10px 24px rgba(0,0,0,.12);
+    }
+    .menuBar{
+        display: none;
+    }
+    .accountMenu{
+    display: block;
+}
+    .slugBtn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

@@ -1,0 +1,27 @@
+/* Mobile */
+
+.adminLayout{
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+}
+
+.adminContent{
+    flex:1;
+    padding:20px;
+}
+
+/* Tablet & Desktop */
+
+@media (min-width:768px){
+
+    .adminLayout{
+        flex-direction:row;
+    }
+
+    .adminContent{
+        padding:30px;
+        overflow:auto;
+    }
+
+}

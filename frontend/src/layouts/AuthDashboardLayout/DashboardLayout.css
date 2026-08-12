@@ -1,0 +1,31 @@
+.shippingBanner {
+    width: 100%;
+    background: #f5f4f1;
+    color: #5f5b55;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    border-bottom: 1px solid #e7e4de;
+}
+.shippingBanner{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.cartIcon {
+
+  width: 1.6rem;
+  height: 1.6rem;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.cartIcon:hover {
+  color: #e91e63;
+  transform: scale(1.08);
+}

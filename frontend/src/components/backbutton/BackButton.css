@@ -1,0 +1,51 @@
+.backBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    border: 1px solid #dcdcdc;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #d63384;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    width: 140px;
+    margin-bottom: 12px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .backBtn {
+        gap: 8px;
+        padding: 9px 16px;
+        font-size: 15px;
+        margin-top: 12px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .backBtn {
+        padding: 10px 12px;
+        font-size: 16px;
+        margin-top: 12px;
+    }
+}
+
+.backBtn:hover {
+    background-color: #222;
+    color: #fff;
+    border-color: #222;
+}
+
+.backBtn:active {
+    transform: scale(0.98);
+}
+
+.backBtn:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(34, 34, 34, 0.15);
+}

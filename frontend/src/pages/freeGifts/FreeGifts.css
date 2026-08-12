@@ -1,0 +1,181 @@
+.freeGifts {
+    width: 100%;
+    max-width: 1450px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.giftHeading {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.giftHeading h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    color: #d46a7e;
+    font-size: 1.8rem;
+}
+
+.giftHeading svg {
+    width: 30px !important;
+    height: 30px !important;
+}
+
+.giftContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+}
+
+.giftCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #f3d7df;
+    border-radius: 20px;
+    padding: 1rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+    transition: .3s;
+}
+
+.giftCard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px rgba(210,105,142,.15);
+}
+
+.giftImage {
+    width: 180px;
+    height: 180px;
+    border-radius: 16px;
+    overflow: hidden;
+    background: #fff7fa;
+}
+
+.giftImage img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    transition: .4s;
+}
+
+.giftCard:hover .giftImage img {
+    transform: scale(1.08);
+}
+
+.giftContent {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .75rem;
+}
+
+.giftContent h3 {
+    font-size: 1.3rem;
+    color: #d2698e;
+}
+
+.giftContent p {
+    color: #666;
+    line-height: 1.6;
+    font-size: .95rem;
+}
+
+.giftCondition {
+    padding: .5rem 1rem;
+    border-radius: 999px;
+    background: #fde8ef;
+    color: #c64b76;
+    font-size: .9rem;
+    font-weight: 600;
+}
+
+.giftBtn {
+    width: 100%;
+    padding: .8rem 1rem;
+    border: none;
+    border-radius: 999px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.activeGiftBtn {
+    background: #d2698e;
+    color: #fff;
+}
+
+.activeGiftBtn:hover {
+    background: #bc4f77;
+}
+
+.disabledGiftBtn {
+    background: #ececec;
+    color: #888;
+    cursor: not-allowed;
+}
+
+/* Tablet */
+
+@media (min-width: 768px) {
+
+    .freeGifts {
+        padding: 2rem;
+    }
+
+    .giftHeading h2 {
+        font-size: 2.4rem;
+    }
+
+    .giftContainer {
+        grid-template-columns: repeat(2,1fr);
+        gap: 1.5rem;
+    }
+
+    .giftImage {
+        width: 200px;
+        height: 220px;
+    }
+}
+
+/* Desktop */
+
+@media (min-width: 1024px) {
+
+    .freeGifts {
+        padding: 2rem 3rem;
+    }
+
+    .giftHeading h2 {
+        font-size: 3rem;
+    }
+
+    .giftCard {
+        flex-direction: row;
+        text-align: left;
+        align-items: center;
+        gap: 1.5rem;
+        padding: 1.25rem;
+    }
+
+    .giftContent {
+        align-items: flex-start;
+        margin-top: 0;
+    }
+
+    .giftImage {
+        width: 200px;
+        height: 300px;
+        flex-shrink: 0;
+    }
+
+    .giftBtn {
+        width: auto;
+        padding: .8rem 1.5rem;
+    }
+}

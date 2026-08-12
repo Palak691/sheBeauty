@@ -1,0 +1,295 @@
+.reviewContainer{
+    width:100%;
+    padding:2rem 1rem;
+    background:#fff9fa;
+}
+
+/* ---------- AI Summary ---------- */
+
+.reviewSummary{
+    background:linear-gradient(135deg,#fff,#fff6f8);
+    border:1px solid #f6dde5;
+    border-radius:18px;
+    padding:1.5rem;
+    margin-bottom:2rem;
+    box-shadow:0 15px 40px rgba(0,0,0,.05);
+}
+
+.reviewSummary h2{
+    font-size:1.4rem;
+    color:#2d2d2d;
+    margin-bottom:10px;
+}
+
+.reviewSummary h3{
+    color:#ff4f8b;
+    font-size:1.2rem;
+    margin-bottom:12px;
+}
+
+.reviewSummary p{
+    color:#666;
+    line-height:1.7;
+    font-size:.95rem;
+}
+
+/* ---------- Customer Reviews ---------- */
+
+.customerReviews{
+    margin-top:2rem;
+}
+
+.customerReviews h2{
+    text-align:center;
+    font-size:1.8rem;
+    color:#2f2f2f;
+    margin-bottom:2rem;
+}
+
+.customerReviews h2::after{
+    content:"";
+    width:70px;
+    height:4px;
+    background:#ff7aa8;
+    display:block;
+    margin:10px auto 0;
+    border-radius:30px;
+}
+
+/* ---------- Review Card ---------- */
+
+.reviewCard{
+    background:#fff;
+    border:1px solid #f6e2e8;
+    border-radius:18px;
+    padding:1rem;
+    margin-bottom:1.5rem;
+    box-shadow:0 12px 30px rgba(0,0,0,.05);
+    transition:.3s;
+}
+
+.reviewCard:hover{
+    transform:translateY(-4px);
+    box-shadow:0 18px 40px rgba(255,120,165,.15);
+}
+
+/* ---------- User ---------- */
+
+.userInfo{
+    display:flex;
+    flex-direction:column;
+    gap:.5rem;
+    margin-bottom:1rem;
+}
+
+.userInfo h4{
+    font-size:1rem;
+    color:#222;
+}
+
+.userInfo span{
+    color:#888;
+    font-size:.8rem;
+}
+
+/* ---------- Rating ---------- */
+
+.ratingStars{
+    margin-top:.3rem;
+}
+
+.ratingStars p{
+    color:#ffb400;
+    font-weight:600;
+}
+
+.rating{
+    display:flex;
+    gap:8px;
+    margin:15px 0;
+}
+
+.rating svg{
+    font-size:1.3rem;
+    cursor:pointer;
+    color:#d6d6d6;
+    transition:.3s;
+}
+
+.rating svg.activeStar{
+    color:#ffbe33;
+}
+
+/* ---------- Comment ---------- */
+
+.reviewComment{
+    margin-top:1rem;
+    padding-top:1rem;
+    border-top:1px solid #eee;
+    line-height:1.7;
+    color:#666;
+}
+
+/* ---------- Textarea ---------- */
+
+.reviewCard textarea{
+    width:100%;
+    min-height:120px;
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    resize:none;
+    outline:none;
+    margin-top:12px;
+    font-size:.95rem;
+    font-family:inherit;
+}
+
+.reviewCard textarea:focus{
+    border-color:#ff7aa8;
+}
+
+/* ---------- Buttons ---------- */
+
+.reviewActions{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-top:18px;
+}
+
+.reviewActions button,
+.reviewCard button{
+    border:none;
+    outline:none;
+    cursor:pointer;
+    border-radius:8px;
+    padding:10px 18px;
+    font-size:.9rem;
+    transition:.3s;
+}
+
+.reviewActions button:first-child,
+.reviewCard button:first-of-type{
+    background:#ff7aa8;
+    color:#fff;
+}
+
+.reviewActions button:first-child:hover,
+.reviewCard button:first-of-type:hover{
+    background:#ff5b93;
+}
+
+.reviewActions button:last-child,
+.reviewCard button:last-of-type{
+    background:#f2f2f2;
+    color:#444;
+}
+
+.reviewActions button:last-child:hover,
+.reviewCard button:last-of-type:hover{
+    background:#e5e5e5;
+}
+
+/* ===========================
+   TABLET
+=========================== */
+
+@media (min-width:768px){
+
+    .reviewContainer{
+        padding:3rem 5%;
+    }
+
+    .reviewSummary{
+        padding:2rem;
+    }
+
+    .reviewSummary h2{
+        font-size:1.7rem;
+    }
+
+    .reviewSummary h3{
+        font-size:1.4rem;
+    }
+
+    .customerReviews h2{
+        font-size:2.2rem;
+    }
+
+    .reviewCard{
+        max-width:650px;
+        margin:0 auto 2rem;
+        padding:1.5rem;
+    }
+
+    .userInfo{
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
+    }
+
+    .reviewActions{
+        justify-content:flex-end;
+    }
+
+    .reviewCard textarea{
+        min-height:140px;
+    }
+}
+
+/* ===========================
+   DESKTOP
+=========================== */
+
+@media (min-width:1024px){
+
+    .reviewContainer{
+        padding:70px 8%;
+    }
+
+    .reviewSummary{
+        padding:35px;
+        margin-bottom:60px;
+    }
+
+    .reviewSummary h2{
+        font-size:28px;
+    }
+
+    .reviewSummary h3{
+        font-size:24px;
+    }
+
+    .customerReviews{
+        display:grid;
+        grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+        gap:24px;
+        margin-top:50px;
+    }
+
+    .customerReviews h2{
+        grid-column:1/-1;
+        font-size:34px;
+    }
+
+    .reviewCard{
+        max-width:none;
+        width:100%;
+        margin:0;
+        padding:28px;
+    }
+
+    .userInfo h4{
+        font-size:19px;
+    }
+
+    .reviewComment{
+        font-size:15px;
+    }
+
+    .reviewCard textarea{
+        min-height:160px;
+        font-size:15px;
+    }
+}

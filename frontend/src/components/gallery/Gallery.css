@@ -1,0 +1,81 @@
+.imgGallery {
+    width: 100%;
+    margin: 80px auto;
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 240px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.card img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.womanImg {
+    opacity: 1;
+    z-index: 2;
+}
+
+.productImg {
+    opacity: 0;
+    z-index: 1;
+}
+
+.card:hover .womanImg {
+    opacity: 0;
+    transform: scale(1.08);
+}
+
+.card:hover .productImg {
+    opacity: 1;
+    transform: scale(1.08);
+}
+
+@media (min-width:768px){
+  .card {
+    width: 220px;
+    height: 300px;
+    
+  }
+  .card img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+    }
+
+/* Desktop */
+
+@media (min-width:1024px){
+
+.card {
+    width: 220px;
+    height: 320px;
+  
+}
+.card img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+}

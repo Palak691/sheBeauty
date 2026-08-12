@@ -1,0 +1,112 @@
+.filterContainer {
+    width: 100%;
+    box-sizing: border-box;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    padding: 16px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+
+    position: static;
+    height: auto;
+    overflow: visible;
+}
+
+.filterContainer h2 {
+    font-size: 1.4rem;
+    color: #b8256f;
+}
+
+.allcategory,
+.skinType {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.allcategory h3,
+.skinType h3 {
+    font-size: 1.1rem;
+}
+
+.allcategory div,
+.skinType div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.InputPrice {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.InputPrice input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.applyBtn,
+.clearBtn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.applyBtn {
+    background: #000;
+    color: white;
+}
+
+.clearBtn {
+    background: #bab6b6;
+}
+
+.closeBtn {
+    align-self: flex-end;
+    width: 30px;
+    height: 30px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.closeBtn svg {
+    width: 22px;
+    height: 22px;
+}
+
+.setFilter {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Tablet */
+@media (min-width:768px) {
+    .filterContainer {
+        max-width: 300px;
+    }
+}
+
+/* Desktop */
+@media (min-width:1024px) {
+   
+    .filterContainer{
+        width:300px;
+        flex-shrink:0;
+        position:sticky;
+        top:20px;
+    }
+
+}

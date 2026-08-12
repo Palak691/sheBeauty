@@ -1,0 +1,179 @@
+/* ===========================
+   MOBILE FIRST
+=========================== */
+
+.users {
+    width: 100%;
+    padding: 16px;
+}
+
+.usersHeading {
+    display: none;
+}
+
+.userRow {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    background: #fff;
+    border: 1px solid #e8e8e8;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 18px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .05);
+}
+
+.userRow img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+    border: 2px solid #f1f1f1;
+}
+
+.userRow p {
+    margin: 0;
+    color: #555;
+    word-break: break-word;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.actions button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: .9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.actions button:first-child {
+    background: #d86b8c;
+    color: #fff;
+}
+
+.actions button:first-child:hover {
+    background: #c35376;
+}
+
+.actions button:last-child {
+    background: #ffe6e6;
+    color: #d32f2f;
+}
+
+.actions button:last-child:hover {
+    background: #ffd1d1;
+}
+
+/* ===========================
+        TABLET
+=========================== */
+
+@media (min-width:768px) {
+
+    .users {
+        padding: 24px;
+    }
+
+    .usersHeading,
+    .userRow {
+        display: grid;
+        grid-template-columns:
+            80px
+            1.3fr
+            2fr
+            1fr
+            1fr
+            1fr
+            1.3fr
+            1fr
+            1.3fr;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .usersHeading {
+        background: #f5f5f5;
+        padding: 14px 18px;
+        border-radius: 10px;
+        margin-bottom: 14px;
+        font-weight: 600;
+        color: #444;
+    }
+
+    .usersHeading p {
+        margin: 0;
+    }
+
+    .userRow {
+        padding: 16px 18px;
+        margin-bottom: 12px;
+    }
+
+    .userRow img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .actions {
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .actions button {
+        width: 100%;
+        padding: 8px 12px;
+    }
+}
+
+/* ===========================
+        DESKTOP
+=========================== */
+
+@media (min-width:1024px) {
+
+    .users {
+        padding: 30px;
+    }
+
+    .usersHeading,
+    .userRow {
+        grid-template-columns:
+            90px
+            1.5fr
+            2.5fr
+            1fr
+            1fr
+            1fr
+            1.5fr
+            1fr
+            1.5fr;
+    }
+
+    .userRow {
+        transition: .2s ease;
+    }
+
+    .userRow:hover {
+        box-shadow: 0 6px 16px rgba(0, 0, 0, .08);
+    }
+
+    .userRow img {
+        width: 70px;
+        height: 70px;
+    }
+
+
+
+    .actions button {
+        padding: 10px 14px;
+    }
+}

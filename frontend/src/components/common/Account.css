@@ -1,0 +1,91 @@
+/* Mobile First */
+.left {
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ececec;
+    border-radius: 10px;
+}
+
+.left .para {
+    margin: 0;
+    color: #222;
+    font-size: 1.5rem;
+    font-weight: 600;
+    position: relative;
+    left: 0;
+}
+
+.left>p {
+    color: #666;
+    margin: 8px 0 24px;
+}
+
+.orders,
+.credits,
+.account,
+.legal {
+    padding: 18px 0;
+    border-top: 1px solid #ececec;
+}
+
+.orders>p:first-child,
+.credits>p:first-child,
+.account>p:first-child,
+.legal>p:first-child {
+    font-size: .8rem;
+    font-weight: 600;
+    color: #d86b8c;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+.orders p,
+.credits p,
+.account p,
+.account b,
+.legal p {
+    display: block;
+    margin: 10px 0;
+    color: #444;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.orders p:hover,
+.credits p:hover,
+.account p:hover,
+.account b:hover,
+.legal p:hover {
+    color: #d86b8c;
+}
+
+.account b {
+    color: #d86b8c;
+}
+
+/* Tablet */
+
+@media (min-width:768px) {
+
+    .left {
+        width: 280px;
+        position: sticky;
+        top: 20px;
+    }
+}
+
+/* Desktop */
+
+@media (min-width:1024px) {
+
+    .left {
+        width: 300px;
+        padding: 24px;
+    }
+
+    .left h2 {
+        font-size: 1.8rem;
+    }
+}

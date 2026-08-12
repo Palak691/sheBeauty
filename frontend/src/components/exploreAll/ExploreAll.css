@@ -1,0 +1,206 @@
+.exploreContainer {
+    margin-top: 40px;
+    padding: 50px 16px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-image: url('../../assets/images/bg.avif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* Background Overlay */
+.exploreContainer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.12);
+    z-index: 1;
+    pointer-events: none;
+}
+
+
+
+.womenImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.imageRing {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageRing::before {
+    content: "";
+    position: absolute;
+    inset: -8px;
+    border: 4px dashed rgb(248, 78, 115);
+    border-radius: 50%;
+    animation: rotateRing 18s linear infinite;
+}
+
+.imageRing img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.imageRing img:hover {
+    transform: scale(1.04);
+}
+
+@keyframes rotateRing {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.exploreBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+    position: relative;
+    z-index: 2;
+}
+
+.exploreBtn button {
+    position: relative;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #db4e78, #e7558f);
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.35s ease;
+    box-shadow: 0 10px 30px rgba(255, 95, 158, 0.45);
+}
+
+
+.exploreBtn button:hover {
+    transform: translateY(-6px) scale(1.06);
+    box-shadow:
+        0 18px 40px rgba(255, 95, 158, 0.5),
+        0 0 25px rgba(255, 143, 177, 0.7);
+}
+
+
+.exploreBtn button:active {
+    transform: scale(0.97);
+}
+
+
+.exploreBtn button::before {
+    content: "";
+    position: absolute;
+    top: -40%;
+    left: -120%;
+    width: 45%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.55);
+    transform: rotate(25deg);
+    transition: 0.7s;
+}
+
+.exploreBtn button:hover::before {
+    left: 170%;
+}
+
+
+
+.exploreBtn button::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 12px;
+    width: calc(100% - 24px);
+    height: 35%;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+/* tab */
+
+@media (min-width: 768px) {
+
+    .exploreContainer {
+        margin-top: 48px;
+        padding: 60px 20px;
+    }
+
+    .imageRing {
+        width: 320px;
+        height: 320px;
+    }
+
+    .imageRing::before {
+        inset: -10px;
+        border-width: 5px;
+    }
+
+    .imageRing img {
+        width: 280px;
+        height: 280px;
+    }
+
+    .exploreBtn {
+        margin-top: 30px;
+    }
+
+    .exploreBtn button {
+        padding: 15px 38px;
+        font-size: 1rem;
+    }
+}
+
+/* desktop */
+@media (min-width: 1024px) {
+
+    .exploreContainer {
+        margin-top: 54px;
+        padding: 70px 20px;
+    }
+
+    .imageRing {
+        width: 360px;
+        height: 360px;
+    }
+
+    .imageRing img {
+        width: 320px;
+        height: 320px;
+    }
+
+    .exploreBtn {
+        margin-top: 35px;
+    }
+
+    .exploreBtn button {
+        padding: 16px 42px;
+        font-size: 1rem;
+    }
+}

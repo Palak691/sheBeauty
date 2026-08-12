@@ -1,0 +1,114 @@
+.skinTools {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+/* Left Image */
+.skinToolsImg {
+    width: 100%;
+    position: static;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.skinToolsImg img {
+    width: 70%;
+    height: 200px;
+    display: block;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.skinToolsImg button {
+    width: 100%;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 8px;
+    background: #111;
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.skinToolsImg button:hover {
+    background: #333;
+}
+
+/* Right Section */
+.skinToolsProducts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.skinToolsProducts p {
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #222;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .skinTools {
+        padding: 1.5rem;
+    }
+    .skinToolsImg img {
+        width: 70%;
+        height: 300px;
+    }
+
+    .skinToolsProducts p {
+        font-size: 1.8rem;
+    }
+     .skinToolsImg  button {
+        width: fit-content;
+        padding: 12px 24px;
+        font-size: 1rem;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .skinTools {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 2rem;
+        padding: 2rem;
+    }
+
+    .skinToolsImg {
+        flex: 0 0 320px;
+        position: sticky;
+        top: 100px;
+    }
+
+    .skinToolsImg img {
+        width: 100%;
+        height: 350px;
+    }
+
+    .skinToolsProducts {
+        flex: 1;
+    }
+
+    .skinToolsProducts p {
+        font-size: 2rem;
+        text-align: left;
+        margin-bottom: 1.5rem;
+    }
+    .skinToolsImg button{
+        padding: 14px 18px;
+    }
+}
