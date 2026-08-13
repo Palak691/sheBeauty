@@ -17,8 +17,9 @@ const PORT = process.env.PORT || 8000;
 
 
 
+const allowedOrigin = ["https://she-beauty-nelu.vercel.app", "http://localhost:5173"]
 app.use(cors({
-  origin: "https://she-beauty-nelu.vercel.app",
+  origin: allowedOrigin,
   credentials: true
 }));
 

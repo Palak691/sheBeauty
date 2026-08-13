@@ -34,7 +34,7 @@ export const Bestseller = () => {
         }}>SHOP NOW</button>
 
          <div className="products desktopProducts"  >
-            {isBestseller.map((bestseller)=>
+            {isBestseller?.map((bestseller)=>
             <ProductCard key={bestseller._id} product={bestseller}/> )}
         </div>
 
@@ -45,7 +45,7 @@ export const Bestseller = () => {
     768: { slidesPerView: 2.5 },
   }}>
         <div className="products">
-            {isBestseller.map((bestseller)=>
+            {isBestseller?.map((bestseller)=>
             <SwiperSlide key={bestseller._id}>
             <ProductCard key={bestseller._id} product={bestseller}/>
             </SwiperSlide>

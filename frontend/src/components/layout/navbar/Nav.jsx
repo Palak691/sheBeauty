@@ -17,7 +17,7 @@ export const Nav = () => {
   const search = searchParams.get('search') || '';//search bar functionality
 // 'search' is the query parameter/field name you're looking for in the URL.
   const showSearch = location.pathname === '/allproducts' ||
-   allCategory.some((category) =>  location.pathname === `/${category.toLowerCase()}`);
+   allCategory?.some((category) =>  location.pathname === `/${category.toLowerCase()}`);
   useEffect(()=>{
     const fetchAllCategories = async () => {
       await dispatch(getAllCategories())
@@ -65,7 +65,7 @@ export const Nav = () => {
       }
     <div className="navbars">
        
-        {allCategory.map((category ,i)=>{
+        {allCategory?.map((category ,i)=>{
            return (
             <NavLink key={category}  to={`/${category.toLowerCase()}`}>
               {category.toUpperCase()}

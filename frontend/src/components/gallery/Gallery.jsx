@@ -14,27 +14,27 @@ import { NavLink } from 'react-router-dom'
 const gallery = [
   {
     img : img,
-    slug : 'glow-highlighter-79061'
+    slug : 'mamaearth-highlighter-43828'
   },
   {
     img : img2,
-    slug : 'luxe-mascara-9533'
+    slug : 'mascara-black'
   },
   {
     img : img3,
-    slug : 'pure-highlighter-28660'
+    slug : 'mamaearth-highlighter-66351'
   },
   {
     img : img4,
-    slug : 'bare-hair-oil-96198'
+    slug : 'radiant-hair-oil-83794'
   },
   {
     img :img5,
-    slug : 'fresh-serum-55871'
+    slug : 'luxe-toner-25041'
   },
   {
     img : img6,
-    slug : 'bloom-concealer-42604'
+    slug : 'rhode-foundation-83137'
   }
 ]
 

@@ -6,14 +6,13 @@ import Product from '../models/productSchema.js';
 
 
 const MONGO_URL = process.env.MONGO_URL;
-// console.log(MONGO_URL)
 
 
 export const products = [
  
   {
-    "name": "Derma Hair Oil",
-    "slug": "derma-hair-oil",
+    "name": "DermaFit Hair Oil",
+    "slug": "dermaFit-hair-oil",
     "description": "A nourishing hair oil that strengthens roots and promotes healthy, shiny hair.",
     "price": 599,
     "discountPercentage": 20,
@@ -33,8 +32,8 @@ export const products = [
     
   },
   {
-    "name": "Lipstick NudeTouch",
-    "slug": "lipstick-nudetouch",
+    "name": "Lipstick NudeTouch01",
+    "slug": "lipstick-nudetouch-01",
     "description": "A creamy nude lipstick with long-lasting color and a smooth matte finish.",
     "price": 799,
     "discountPercentage": 15,
@@ -56,8 +55,8 @@ export const products = [
     
   },
   {
-    "name": "Soft Premium Brushes",
-    "slug": "soft-premium-brushes",
+    "name": "Soft Premium colored Brushes",
+    "slug": "soft-premium-brushes-01",
     "description": "A premium makeup brush set for seamless blending and flawless application.",
     "price": 2999,
     "discountPercentage": 30,
@@ -76,8 +75,8 @@ export const products = [
    
   },
   {
-    "name": "Serum",
-    "slug": "serum",
+    "name": "Brightening Serum",
+    "slug": "serum-bright",
     "description": "A lightweight facial serum that deeply hydrates and brightens the skin.",
     "price": 499,
     "discountPercentage": 25,
@@ -100,8 +99,8 @@ export const products = [
     
   },
   {
-    "name": "Mascara",
-    "slug": "tint",
+    "name": "Mascara Black",
+    "slug": "mascara-black",
     "description": "To darken, thicken, lengthen, and define eyelashes.",
     "price": 999,
     "discountPercentage": 15,
