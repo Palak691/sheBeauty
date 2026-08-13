@@ -18,7 +18,7 @@ const PORT = process.env.PORT || 8000;
 
 
 app.use(cors({
-  origin: "https://she-beauty-nelu.vercel.app/",
+  origin: "https://she-beauty-nelu.vercel.app",
   credentials: true
 }));
 
